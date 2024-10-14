@@ -1,0 +1,116 @@
+body {
+    font-family: 'Press Start 2P', cursive;
+    margin: 0;
+    padding: 0;
+    background-image: url('../assets/img/MC.jpg'); /* Set the background image */
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the background image */
+    color: #FFFFFF; /* White text for better readability */
+    position: relative; /* For absolute positioning of elements */
+    overflow: hidden; /* Prevent scrolling */
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.8); /* Slightly transparent black background */
+    color: #FFF; /* White text */
+    padding: 40px;
+    text-align: center;
+    border-bottom: 4px solid #808080; /* Gray border */
+    position: relative; /* For positioning the image */
+    z-index: 2; /* Ensure header is above the background */
+}
+
+header img {
+    position: absolute;
+    top: -20px;
+    left: 80px;
+    height: 100px; /* Increased size of the logo */
+    width: auto; /* Maintain aspect ratio */
+}
+
+.top-right-buttons {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    z-index: 3; /* Ensure buttons are above the background */
+    display: flex;
+    justify-content: flex-end; /* Aligns buttons to the right */
+    gap: 10px; /* Space between buttons */
+}
+
+.top-right-buttons a {
+    color: #FFFFFF; /* White text for buttons */
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px;
+    padding: 13px 20px; /* Adjusted padding for buttons */
+    border-radius: 4px;
+    font-family: 'Arial Black', Arial, sans-serif; /* Arial Black font */
+    font-size: 13px; /* Adjust font size if needed */
+    background-color: rgba(0, 128, 0, 0.7); /* Green background with some transparency */
+}
+
+.top-right-buttons a:hover {
+    background-color: rgba(0, 128, 0, 0.9); /* Darker green on hover */
+}
+
+.top-right-buttons a i {
+    margin-right: 8px; /* Space between icon and text */
+}
+
+.centered-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px); /* Center vertically minus the header height */
+    margin: 0;
+    z-index: 3; /* Ensure text is above the background */
+    position: relative;
+}
+
+/* Remove the video-related styles */
+.background-video {
+    display: none; /* Not needed anymore */
+}
+
+/* Audio element styling (if needed) */
+.background-music {
+    display: none; /* Hide audio player if you don’t want it visible */
+}
+
+.admin-buttons, .user-buttons {
+    display: flex; /* Align buttons in a row */
+    gap: 10px; /* Space between individual buttons */
+}
+
+/* Flash message styles */
+.flash-message {
+    background-color: #4caf50; /* Green background */
+    color: white; /* White text */
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    text-align: center;
+    z-index: 3; /* Ensure flash messages are above the background */
+    position: relative; /* For positioning */
+}
+.logout-button {
+    display: inline; /* Ensure the logout button aligns properly */
+}
+
+.logout-button button {
+    background-color: #000; /* Black background for the logout button */
+    color: #FFFFFF; /* White text */
+    border: 2px solid #FFFFFF; /* White border */
+    padding: 13px 20px; /* Padding for the button */
+    border-radius: 9px; /* Rounded corners */
+    font-family: 'Arial Black', Arial, sans-serif; /* Font style */
+    font-size: 12px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+.logout-button button:hover {
+    background-color: #FFFFFF; /* Change to white background on hover */
+    color: #000; /* Change text to black on hover */
+}

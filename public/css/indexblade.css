@@ -1,0 +1,185 @@
+/* Video Background */
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+#background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Header Actions Container */
+.header-actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Back Icon */
+.back-icon {
+    width: 90px;
+    height: 70px;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+.back-icon-container:hover .back-icon {
+    animation: shake 0.5s;
+    animation-timing-function: ease-in-out;
+}
+
+/* Heading Container */
+.heading-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Search Form */
+.search-form {
+    display: flex;
+    align-items: center;
+    border: 1px solid #000;
+}
+
+.search-input {
+    width: 500px;
+    padding: 15px;
+    border: none;
+    background-color: #555;
+    color: white;
+    font-size: 18px;
+}
+
+.search-btn {
+    background-color: #006400;
+    border: 1px solid #000;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.search-icon {
+    width: 30px;
+    height: 30px;
+    filter: brightness(0) invert(1);
+}
+
+/* Products Container */
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+/* Product Card */
+.product-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.product-image img {
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.product-details {
+    text-align: center;
+}
+
+.product-actions {
+    margin-top: 10px;
+}
+
+.product-actions .btn {
+    margin: 0 5px;
+}
+
+/* Centering the 'No products found' message */
+.no-products-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    color: #FFFFFF;
+}
+
+.no-products-message p {
+    font-size: 18px;
+}
+.table-responsive {
+    margin-top: 500px;
+}
+
+.products-table {
+    width: 90%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #f9f9f9;
+}
+
+.products-table th, .products-table td {
+    padding: 10px 10px;
+    border: 3px solid #ddd;
+    text-align: center;
+}
+
+.products-table th {
+    background-color: #333;
+    color: #fff;
+}
+
+.products-table td img {
+    max-width: px;
+    height: auto;
+}
+
+.products-table td .btn {
+    margin: 0 5px;
+}
+.add-product-button {
+    display: flex;
+    justify-content: flex-end; /* Align the button to the right */
+    margin: 20px auto; /* Adds spacing */
+    width: 90%; /* Ensures it aligns with the products container or table */
+}
+
+.add-product-button a {
+    font-weight: bold;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #28a745;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.add-product-button a:hover {
+    background-color: #218838;
+}
